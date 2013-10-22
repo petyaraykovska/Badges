@@ -10,7 +10,8 @@ if (!function_exists($command_function)) {
 call_user_func_array($command_function, array_slice($argv, 2));
 
 function command_pdfs() {
-	generate_pdfs();
+	generate_front_pdfs();
+	generate_back_pdf();
 }
 
 function command_clean() {
@@ -18,7 +19,7 @@ function command_clean() {
 	system('rm -rf html/*');
 }
 
-function generate_pdfs($file_name_template = 'pdf/{number}.pdf') {
+function generate_front_pdfs($file_name_template = 'pdf/{number}.pdf') {
 	$people = parse_people_file('people.csv');
 	$file_number = 0;
 	foreach($people as $person) {
@@ -26,6 +27,10 @@ function generate_pdfs($file_name_template = 'pdf/{number}.pdf') {
 		$file_number++;
 		generate_pdf_from_person($person, $output_file_name);
 	}
+}
+
+function generate_back_pdf() {
+	generate_pdf_from_html_file('back.html', 'pdf/back.pdf');
 }
 
 function command_reg_html() {
