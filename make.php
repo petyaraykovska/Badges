@@ -41,6 +41,10 @@ function command_reg_html() {
 
 function parse_people_file($file_name) {
 	$people = array();
+	if (!file_exists($file_name)) {
+		stderr_line("People CSV file '$file_name' doesn't exist. Please export it from Camptix and place it here.");
+		return array();
+	}
 	$f = fopen($file_name, 'r');
 	while( false !== ( $line = fgetcsv( $f ) ) ) {
 		if ( !array_filter( $line ) ) {
