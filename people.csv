@@ -1,0 +1,4 @@
+"Attendee ID","Ticket Type","First Name","Last Name","E-mail Address","Purchase date",Status,"Transaction ID",Coupon,Twitter,"Размер тениска","Предпочитана храна","Какво правите с WordPress?"
+299,"Билет за WordCamp",Николай,Бачийски,nb@nikolay.bg,2012-10-01,Publish,,nb-not-paid,nikolayb,"Мъжка M","Ям всичко","пиша и създавам съдържание, програмирам, създавам/администрирам/настройвам сайтове"
+305,"Билет за WordCamp",Жоро,Йорданов,joro@yordanoff.net,2012-10-02,Publish,33J32805XA301233G,,yordanoff,"Мъжка M","Ям всичко","програмирам, дизайн, създавам/администрирам/настройвам сайтове, собственик съм на WordPress сайтове"
+65,"Билет за WordCamp",Анри,Тепеликян,abcconsult.ltd@gmail.com,2012-10-19,Publish,5LE145536J9145824,,@anriantoan,"Мъжка L","Без месо","създавам/администрирам/настройвам сайтове, собственик съм на WordPress сайтове"

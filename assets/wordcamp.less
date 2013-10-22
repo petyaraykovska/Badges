@@ -1,0 +1,56 @@
+html, body, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+@a6_width: 105mm;
+@a6_height: 148mm;
+
+@page_border_left: 0mm;
+@page_border_right: 0mm;
+@page_border_top: 0mm;
+@page_border_bottom: -1mm;
+
+body {
+	border: 1px solid black;
+	font-family: 'PT Sans Caption';
+	text-align: center;
+	width: @a6_width;
+	height: @a6_height;
+}
+
+header {
+	font-family: 'ChunkFive';
+}
+#logo {
+	margin-top: 1.5cm;
+	width: 50%;
+}
+
+.first {
+	font-size: 30pt;
+	color: #E24B19;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 2.4cm;
+}
+.last {
+	font-size: 28pt;
+	color: #111C40;
+	margin-top: 0.25cm;
+}
+
+.twitter {
+	font-size: 20pt;
+	font-weight: bold;
+	color: #418B65;
+	margin-top: 1.8cm;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: @a6_width + 1cm;
+	background-color: #aaa;
+}

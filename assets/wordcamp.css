@@ -1,0 +1,46 @@
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  border: 1px solid black;
+  font-family: 'PT Sans Caption';
+  text-align: center;
+  width: 105mm;
+  height: 148mm;
+}
+header {
+  font-family: 'ChunkFive';
+}
+#logo {
+  margin-top: 1.5cm;
+  width: 50%;
+}
+.first {
+  font-size: 30pt;
+  color: #E24B19;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2.4cm;
+}
+.last {
+  font-size: 28pt;
+  color: #111C40;
+  margin-top: 0.25cm;
+}
+.twitter {
+  font-size: 20pt;
+  font-weight: bold;
+  color: #418B65;
+  margin-top: 1.8cm;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 106mm;
+  background-color: #aaa;
+}
