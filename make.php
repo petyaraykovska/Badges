@@ -50,14 +50,14 @@ function parse_people_file($file_name) {
 			continue;
 		}
 		$person = new stdClass();
+		$person->id = $line[0];
 		$person->first = $line[2];
 		$person->last = $line[3];
-		$person->twitter = parse_twitter($line[9]);
-		$person->id = $line[0];
 		$person->email = $line[4];
 		$person->coupon = $line[8];
-		$person->size = $line[10];
-		$person->telerik = in_array($person->id, array(831, 830));
+		$person->tshirt_size = $line[11]? $line[11] : $line[16];
+		$person->tshirt_gender = $line[12]? $line[12] : $line[17];
+		$person->tshirt_gender_letter = strtoupper(substr($person->tshirt_gender, 0, 1));
 
 		$people[]= $person;
 	}
