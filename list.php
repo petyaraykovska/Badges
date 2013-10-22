@@ -29,8 +29,8 @@
 		<tr>
 			<th>ID</th>
 			<th>Име</th>
-			<th>Тениска</th>
-			<th>Трябва да плати?</th>
+			<th>Размер тениска</th>
+			<th>Кройка тениска</th>
 			<th>Купон</th>
 		</tr>
 	</thead>
@@ -39,8 +39,8 @@
 		<tr>
 			<td><?php echo $person->id; ?></td>
 			<td><?php echo $person->first . ' ' . $person->last; ?></td>
-			<td><?php echo $person->size; ?></td>
-			<td><?php echo false === strpos( $person->coupon, 'not-paid' )? '' : '<b>$$$</b>'; ?></td>
+			<td><?php echo $person->tshirt_size; ?></td>
+			<td><?php echo $person->tshirt_gender?></td>
 			<td class="coupon"><?php echo $person->coupon; ?></td>
 		</tr>
 <?php endforeach; ?>
